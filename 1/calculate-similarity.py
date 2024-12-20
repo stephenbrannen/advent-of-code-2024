@@ -8,16 +8,16 @@ import os
 #     parent_dir = os.path.abspath(os.path.join(root_dir, os.pardir))
 #     input_file = os.path.join(parent_dir, "inputs/1.txt")
     
-#     with open(input_file, "r") as file:
-#         data = [line.split() for line in file]
-#         left = [int(line[0]) for line in data]
-#         right = [int(line[1]) for line in data]
+    # with open(input_file, "r") as file:
+    #     data = [line.split() for line in file]
+    # left = [int(line[0]) for line in data]
+    # right = [int(line[1]) for line in data]
 
-#     similarity_score = 0
-#     for number in left:
-#         similarity_score += number * right.count(number)
+    # similarity_score = 0
+    # for number in left:
+    #     similarity_score += number * right.count(number)
 
-#     print(f"Total similarity score: {similarity_score}")
+    # print(f"Total similarity score: {similarity_score}")
 
 # Simplified version from copilot
 if __name__ == "__main__":
