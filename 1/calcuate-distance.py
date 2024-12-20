@@ -1,15 +1,14 @@
 import os
+import sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
+from common.files import get_file_data
 
 # Initial solution to the problem
 
 # if __name__ == "__main__":
 #     # read contents from input.txt file
-#     root_dir = os.path.dirname(os.path.abspath(__file__))
-#     parent_dir = os.path.abspath(os.path.join(root_dir, os.pardir))
-#     input_file = os.path.join(parent_dir, "inputs/1.txt")
-    
-#     with open(input_file, "r") as file:
-#         data = file.readlines()
+#     data = get_file_data("1.txt")
 
 #     # split the data into left and right
 #     left = []
@@ -36,12 +35,7 @@ import os
 # Simplified version from copilot
 if __name__ == "__main__":
     # read contents from input.txt file
-    root_dir = os.path.dirname(os.path.abspath(__file__))
-    parent_dir = os.path.abspath(os.path.join(root_dir, os.pardir))
-    input_file = os.path.join(parent_dir, "inputs/1.txt")
-    
-    with open(input_file, "r") as file:
-        data = [line.split() for line in file]
+    data = get_file_data("1.txt")
 
     # split the data into left and right, convert to integers, and sort
     left = sorted(int(line[0]) for line in data)
