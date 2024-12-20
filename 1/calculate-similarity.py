@@ -8,9 +8,6 @@ import os
 #         data = [line.split() for line in file]
 #         left = [int(line[0]) for line in data]
 #         right = [int(line[1]) for line in data]
-#         # This time, you'll need to figure out exactly how often each number from the left list appears in 
-#         # the right list. Calculate a total similarity score by adding up each number in the left list after 
-#         # multiplying it by the number of times that number appears in the right list.
 
 #     similarity_score = 0
 #     for number in left:
