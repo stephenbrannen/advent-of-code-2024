@@ -10,8 +10,8 @@ Advent of Code is an annual event in December that features a series of daily pr
 
 The repository is organized by day, with each day's solution contained in its own directory. For example:
 
-## Input file
-Make sure you have replaced the contents of `input.txt` with the input provided from https://adventofcode.com/2024/day/1/input
+## Input files
+Make sure you have replaced the contents of any `input.txt` files with the input provided by Advent of Code.
 
 ## How to Run the Code
 
