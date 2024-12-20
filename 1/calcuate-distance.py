@@ -12,27 +12,27 @@ import os
 #     with open(input_file, "r") as file:
 #         data = file.readlines()
 
-#         # split the data into left and right
-#         left = []
-#         right = []
+#     # split the data into left and right
+#     left = []
+#     right = []
 
-#         for line in data:
-#             temp = line.split()
-#             left.append(int(temp[0]))
-#             right.append(int(temp[1]))
+#     for line in data:
+#         temp = line.split()
+#         left.append(int(temp[0]))
+#         right.append(int(temp[1]))
 
-#         # sort the lists
-#         left = sorted(left)
-#         right = sorted(right)
+#     # sort the lists
+#     left = sorted(left)
+#     right = sorted(right)
 
-#         # calculate the distance between the smallest two points from each list
-#         distance = 0
+#     # calculate the distance between the smallest two points from each list
+#     distance = 0
 
-#         for i in range(len(left)):
-#             # Find distance between the smallest two points and add the distance to the total distance
-#             distance += abs(left[i] - right[i])
+#     for i in range(len(left)):
+#         # Find distance between the smallest two points and add the distance to the total distance
+#         distance += abs(left[i] - right[i])
 
-#         print(distance)
+#     print(f"Total distance: {distance}")
 
 # Simplified version from copilot
 if __name__ == "__main__":
@@ -51,4 +51,4 @@ if __name__ == "__main__":
     # calculate the distance between the smallest two points from each list
     distance = sum(abs(l - r) for l, r in zip(left, right))
 
-    print(distance)
+    print(f"Total distance: {distance}")
