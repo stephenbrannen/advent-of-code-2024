@@ -4,7 +4,11 @@ import os
 
 # if __name__ == "__main__":
 #     # read contents from input.txt file
-#     with open("input.txt", "r") as file:
+#     root_dir = os.path.dirname(os.path.abspath(__file__))
+#     parent_dir = os.path.abspath(os.path.join(root_dir, os.pardir))
+#     input_file = os.path.join(parent_dir, "inputs/1.txt")
+    
+#     with open(input_file, "r") as file:
 #         data = file.readlines()
 
 #     # split the data into left and right
@@ -32,8 +36,11 @@ import os
 # Simplified version from copilot
 if __name__ == "__main__":
     # read contents from input.txt file
-
-    with open("input.txt", "r") as file:
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+    parent_dir = os.path.abspath(os.path.join(root_dir, os.pardir))
+    input_file = os.path.join(parent_dir, "inputs/1.txt")
+    
+    with open(input_file, "r") as file:
         data = [line.split() for line in file]
 
     # split the data into left and right, convert to integers, and sort
